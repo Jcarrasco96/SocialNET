@@ -1,0 +1,76 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="@dimen/spacing_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:text="@string/wallet" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/item_wallet"
+                style="@style/EditText_Flat_Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_round_bg_accent"
+                android:hint="@string/trustinvesting_wallet"
+                android:minHeight="48dp"
+                android:padding="@dimen/spacing_middle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressUserWallet"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_middle"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:layout_weight="1"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnChangeWallet"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_save"
+                app:tint="?attr/colorSecondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

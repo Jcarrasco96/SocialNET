@@ -1,0 +1,243 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="@dimen/spacing_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:text="@string/personal_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/item_first_name"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:hint="@string/first_name"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/spacing_middle" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/item_last_name"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:hint="@string/last_name"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/item_email"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:hint="@string/email"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/spacing_middle" />
+
+                <ImageButton
+                    android:id="@+id/btnSendCode"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="@dimen/button_size"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_verify_email"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_country_code"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_size"
+                    android:layout_weight="2"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:contentDescription="@string/app_name"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/app_name" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/item_phone"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:hint="@string/phone"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_sex"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:contentDescription="@string/app_name"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/app_name" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/item_birthdate"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_accent"
+                    android:hint="@string/birthdate"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/item_address"
+                style="@style/EditText_Flat_Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_round_bg_accent"
+                android:hint="@string/address"
+                android:minHeight="48dp"
+                android:padding="@dimen/spacing_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/item_identification"
+                style="@style/EditText_Flat_Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_round_bg_accent"
+                android:hint="@string/id"
+                android:minHeight="48dp"
+                android:padding="@dimen/spacing_middle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressUserUpdate"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_middle"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:layout_weight="1"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_save"
+                app:tint="?attr/colorSecondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

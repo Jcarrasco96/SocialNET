@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_200">#EF9A9A</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_700">#1976D2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="overlay_dark_10">#1a000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="blue_grey_300">#90A4AE</color>
+
+    <!-- STATUS -->
+    <color name="red_darken_2">#d32f2f</color> <!--DANGER-->
+    <color name="yellow_darken_4">#f57f17</color> <!--WARN-->
+    <color name="blue_darken_3">#1565c0</color> <!--INFO-->
+    <color name="green_darken_2">#388E3C</color> <!--SUCCESS-->
+    <color name="blue_gray_darken_1">#546e7a</color> <!--PRIMARY-->
+
+</resources>
